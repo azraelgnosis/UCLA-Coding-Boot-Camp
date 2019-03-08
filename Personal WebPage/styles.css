@@ -1,30 +1,49 @@
 header {
-			height: 3em;
-			width: 15%;
-			margin-left: 10%;		
-			display: inline-block;			
-			background-color: #4aaaa5;
-		}
+	background-color: #ffffff;
+	height: 4em;
+}
+
+.top {
+	align-self: center;
+	width: 960px;
+	height: 100%;
+	background-color: white;
+	margin: auto;	
+}
 
 .header-text {
-	text-align: center;
-/*			vertical-align: middle;*/
 	font-size: 2em;
 	font-family: "Georgia", Times, Times New Roman, serif;
-	color: white;
+	color: white;	
+	background-color: #4aaaa5;
+
+	display: inline-block;
+	height: 100%;
+	padding: 15px 30px 15px 30px;
+	margin: auto;
 }
 
 nav {
 	display: inline;
 	float: right;
-	border-right: 5px grey;
+	margin-right: 5%;
+	margin-top: .5%;
 }
 
 .navigation td {
-	content: "";
-	float: right;
 	color: grey;
 	border-right: 1px solid grey;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.navigation td:last-child {
+	border-right: none;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
 }
 
 /* ----------------------------------------- */
@@ -34,15 +53,21 @@ nav {
 	position: fixed;
 	height: 100%;
 	width: 100%;
+	border-top: solid 1px;
+	border-top-color: #cccccc;
 }
 
 .content {
 	background-color: white;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
-	width: 80%;
+	width: 960px;
+	height: 100%;
 	align-self: center;
 	margin: auto;
+	padding: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 .heading {
@@ -54,7 +79,7 @@ nav {
 
 footer {
 	text-align: center;
-	color: white;
+	color: white; /*#777777;*/
 	background-color: #666666;
 	position: fixed;
 	bottom: 0;
@@ -88,31 +113,32 @@ input[type=submit] {
 	border: none;
 	outline: none;
 	color: white;
+	font-size: 1em;
+	font-family: "Georgia", Times, Times New Roman, serif;
 }
 
 textarea {
 	width: 100%;
 }
 
-/* ----- Portfolio ----- */
+/* ----- Portfolio Page ----- */
 
-.grid-container {
-	display: grid;
-	grid-column-gap: 5px;
-	grid-row-gap: 5px;
+.portfolio-table img { 
+	width: 100%; 
 }
 
-.grid-item-1 {
-	grid-column: 1;
-	grid-row: 1;
+td {
+	position: relative;
+	text-align: center;
 }
 
-.grid-item-2 {
-	grid-row: 1;
-	grid-column: 2;
-}
-
-.grid-item-3 {
-	grid-row: 1;
-	grid-column: 3;
+.overlay {
+	position: absolute;
+	top: 80%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+	background-color: #4aaaa5;
+	width: 100%;
+	font-family: "Georgia", Times, Times New Roman, serif;
 }
