@@ -88,6 +88,12 @@ footer {
 	border-top: 5px solid #4aaaa5;
 }
 
+/* ------ About Page ------ */
+.text {
+	padding: 10px;
+	line-height: 150%;
+}
+
 /*------ Contact Page ------*/
 form {
 	float: center;

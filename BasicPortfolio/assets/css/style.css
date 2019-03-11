@@ -1,0 +1,97 @@
+/* -------------- Entire Project -------------- */
+
+header {
+    background-color: #ffffff;
+    height: 4em;
+}
+
+.top {
+    /*align-self: center;*/
+}
+
+.header-text {
+    display: inline-block;
+    font-family: "Georgia", Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    /*margin: auto;*/
+}
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    image:plum;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #666666;
+    color: white;
+    width: 100%;
+    border-top: 5px solid #4aaaa5;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    border-top: solid 1px;
+    background-color: lightgrey;
+}
+
+/* ------------- About Me ----------- */
+
+
+
+/* Contact */
+
+input {
+    width: 100%;
+}
+
+body {
+    background-color:#ffffff;
+    height: 4em;
+}
+h1 {
+    color:black;
+    text-align: left;
+    font-size: xx-large;
+}
+
+h2 {
+    color:black;
+    text-align: left;
+    font-size: xx-large;
+}
+
+
+/* Portfolio */
+
+.portfolio-table img {
+    width: 100%;
+}
+
+td {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 80%;
+    background-color: #4aaaa5;
+=
+}
+
