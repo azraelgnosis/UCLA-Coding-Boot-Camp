@@ -6,11 +6,26 @@
 </head>
 
 <body>
-	<span id="randomNum"></span>
-	<span id="total"></span>
-	<span id="numWins"></span>
-	<span id='numLosses'></span>
+	<h2>Directions</h2>
+	<ol>
+		<li>You will be given a random number at the start of the game.</li>
+		<li>There are four Crystal Gems below.</li>
+		<li>By clicking on a Crystal Gem, you will add a specific amount of points to your total score.</li>
+		<li>You win the game by matching your total score to the random number.</li>
+		<li>You lose the game if your total score goes above the random number.</li>
+		<li>The value of each Crystal Gem is hidden from you until you click on it.</li>
+		<li>Each time when the game starts, the game will change the values of each Crystal Gem.</li>
+	</ol>
+
+	<h2>Goal: <span id="randomNum"></span></h2>
+	<h2>Total: <span id="total"></span></h2>	
+	<h2>
+		Wins: <span id="numWins"></span>	
+		Losses: <span id='numLosses'></span>
+	</h2>
+	
 	<br>
+
 	<button class='crystal' id='one'><img src="./assets/images/garnet.jpg"></button>
 	<button class='crystal' id='two'><img src="./assets/images/amethyst.jpg"></button>
 	<button class='crystal' id='three'><img src="./assets/images/pearl.jpg"></button>

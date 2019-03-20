@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+	// returns a random integer between lower and upper bounds
 	function randint(lower, upper) { return Math.floor(Math.random() * (upper-lower) + lower); }
 
 	var random = randint(19, 120); // random number between 19 and 120
@@ -10,11 +11,13 @@ $( document ).ready(function() {
 	var num3 = randint(1, 12);
 	var num4 = randint(1, 12);
 
+	// sets initial total to 0
 	var total = 0;
 	$('#total').text(total); // assigns 'total' to 'total'
 
 	// when a crystal is clicked, its value is added to the total
 	$('button.crystal').on('click', function(){
+		// determins which button was clicked
 		switch(this.id) {
 			case 'one':	total+=num1; break;
 			case 'two':	total+=num2; break;
@@ -22,15 +25,13 @@ $( document ).ready(function() {
 			case 'four': total += num4; break;
 		}
 
-		$('#total').text(total);
+		$('#total').text(total); // assigns new 'total' value to the span 'total'
 
-		if (total === random) {
-			win();
-		} else if (total > random) {
-			lose();
-		} else {}
+		// checks if win/loss condition has been met
+		if (total === random) {	win(); }
+		else if (total > random) { lose(); }
+		else {}
 	});
-
 
 	var wins = 0;
 	var losses = 0;
@@ -38,7 +39,7 @@ $( document ).ready(function() {
 	$('#numWins').text(wins); // assigns 'wins' to 'numWins'
 	$('#numLosses').text(losses); // assisn 'losses' to 'numlosses'
 
-
+	// increments win/loss variable and resets values.
 	function win() {
 		alert("You won!");
 		wins++;
@@ -47,7 +48,7 @@ $( document ).ready(function() {
 	}
 
 	function lose() {
-		alert("You loss!");
+		alert("You lost!");
 		losses++;
 		$('#numLosses').text(losses)
 		reset();
