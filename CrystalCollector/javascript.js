@@ -23,7 +23,13 @@ $( document ).ready(function() {
 		}
 
 		$('#total').text(total);
-	})
+
+		if (total === random) {
+			win();
+		} else if (total > random) {
+			lose();
+		} else {}
+	});
 
 
 	var wins = 0;
@@ -50,12 +56,14 @@ $( document ).ready(function() {
 	// resets game
 	function reset() {
 		random = randint(19, 120);
+		total = 0;
 		num1 = randint(1, 12);
 		num2 = randint(1, 12);
 		num3 = randint(1, 12);
 		num4 = randint(1, 12);
 
-		$('randomNum').text(random)
+		$('#randomNum').text(random);
+		$('#total').text(total);
 	} 
 
 });
